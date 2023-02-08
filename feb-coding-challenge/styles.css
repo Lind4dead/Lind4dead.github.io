@@ -1,0 +1,35 @@
+:root {
+  --width: 1%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p {
+  color: #e9e9e9;
+  text-align: center;
+  margin-top: 2rem;
+}
+body {
+  background-color: #202020;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.img {
+  width: var(--width);
+  object-fit: contain;
+}
+.d-none {
+  display: none;
+}
+.img-pop {
+  object-fit: contain;
+  width: 400px;
+}
