@@ -21,6 +21,8 @@ header {
 }
 .list {
   display: flex;
+  width: 80%;
+  margin: auto;
 }
 .list-item {
   padding-block: 1.5rem;
@@ -54,6 +56,7 @@ header {
   display: flex;
   flex-direction: column;
   position: relative;
+  cursor: pointer;
 }
 .card-image {
   width: 100%;
@@ -90,4 +93,11 @@ a {
 }
 a:hover {
   color: #bebebe;
+}
+
+
+@media (min-width: 992px) {
+  .container {
+    width: 50%;
+  }
 }
