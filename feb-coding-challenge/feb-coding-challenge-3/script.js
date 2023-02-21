@@ -41,7 +41,6 @@ const createElements = (item) => {
 }
 
 const listCards = () => {
-  // cards = ''
   data.forEach(item => {
     cards.innerHTML += `<div id="${item.id}" class="card">
     <img src="${item.url}" alt="" class="card-image">
@@ -52,7 +51,6 @@ const listCards = () => {
 
   })
   data2.forEach(item => {
-    console.log(item)
     cards.appendChild(createElements(item))
   })
 }
