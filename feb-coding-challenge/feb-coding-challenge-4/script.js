@@ -53,8 +53,8 @@ const fetchData = async () => {
   res = await fetch('https://fakestoreapi.com/products')
   .then(res => res.json())
   .then(_data => {
-    _data.map((item, i) => item.id < 11 && data.push(item))
-    _data.map((item, i) => item.id > 10 && data2.push(item))
+    _data.map((item) => item.id < 11 && data.push(item))
+    _data.map((item) => item.id > 10 && data2.push(item))
     console.log(data2)
     listCards(data, data2)
   })
